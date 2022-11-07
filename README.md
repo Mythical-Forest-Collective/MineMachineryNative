@@ -1,0 +1,2 @@
+# MineMachineryNative
+MineMachineryNative will be the core of our Java mod, MineMachine, a WebAssembly-based alternative to ComputerCraft! This repo will also include a standalone application to run MineMachine on! Java will mainly be for bootstrapping and interacting with the Minecraft world, so will not be included in this repo!
