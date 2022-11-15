@@ -7,8 +7,6 @@ import std/[
 
 import ../core/machine
 
-var programSearchDirectories*: seq[string]
-
 proc flatListPrograms(m: Machine): seq[string] =
   for path in m.config.programSearchPaths:
     for file in os.walkDirRec(path):
