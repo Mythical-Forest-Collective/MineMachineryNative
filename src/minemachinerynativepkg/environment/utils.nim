@@ -1,6 +1,4 @@
 import std/[
-  sequtils,
-  strutils,
   strformat,
   os
 ]

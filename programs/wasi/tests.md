@@ -1,0 +1,1 @@
+`helloworld.wasi` fails, as `fd_write` is not implemented.

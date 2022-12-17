@@ -2,10 +2,11 @@ import minemachinerynativepkg/core/[
   machine
 ]
 
+#[
 import minemachinerynativepkg/environment/[
-  execution,
-  wasi
+  execution
 ]
+]#
 
 import std/[
   importutils
@@ -19,8 +20,7 @@ when isMainModule:
   echo("Running as main module!")
 
   var m = Machine.new()
-  m.initHostWasiMethods()
-  m.createWasmEnvironment()
+  m.initialiseWasmEnvironment()
 
   privateAccess(m.type)
-  m.env.findFunction("_start").call(WasmVal.i32)
+  discard m.env.findFunction("main").call(WasmVal.i32)
